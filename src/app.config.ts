@@ -2,7 +2,9 @@ export default {
   pages: [
     'pages/index/index',
     'pages/store/index',
-    'pages/my/index'
+    'pages/my/index',
+
+    'pages/plan/template/index'
   ],
   window: {
     backgroundTextStyle: 'light',

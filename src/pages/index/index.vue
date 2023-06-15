@@ -93,7 +93,7 @@
       </view>
     </view> 
     <view class="fixed bottom-0 right-0 mb-18 mr-6">
-      <button class="w-120 h-120 center bg-indigo-500 text-white rounded-3xl shadow shadow-indigo">
+      <button @tap="handleTo" class="w-120 h-120 center bg-indigo-500 text-white rounded-3xl shadow shadow-indigo">
         <view class="i-mingcute-add-fill text-3xl"></view>
       </button>
     </view>
@@ -101,5 +101,11 @@
 </template>
 
 <script setup>
+  import {navigateTo} from '@tarojs/taro'
 
+  const handleTo = () => {
+    navigateTo({
+      url: '/pages/plan/template/index'
+    })
+  }
 </script>
