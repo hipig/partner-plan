@@ -1,9 +1,9 @@
 <template>
-    <view class="fixed inset-x-0 bottom-0 border-t border-gray-100 border-solid">
-        <view class="flex items-start justify-center bg-white">
-            <view v-for="(item, index) in list" class="flex-auto flex flex-col center py-1.5" :class="{'text-green-500' : selected === index}" @tap="handleSelect(item.pagePath, index)">
+    <view class="h-96 border-t border-stone-100 border-solid">
+        <view class="h-full center bg-white">
+            <view v-for="(item, index) in list" class="flex-auto flex-col center py-1.5" :class="[selected === index ? 'text-indigo-500' : 'text-stone-400']" @tap="handleSelect(item.pagePath, index)">
                 <view class="text-1.5rem" :class="item.icon"></view>
-                <text class="mt-0.5 text-sm">{{ item.text }}</text>
+                <text class="mt-0.5 text-xs">{{ item.text }}</text>
             </view>
         </view>
     </view>    
